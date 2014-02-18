@@ -1,0 +1,8 @@
+extends layout
+
+block content
+	h1= title
+	h1.cookie= cookie
+	form#cookieTest(name="cookieTest", method="post", action="/addcookie")
+		input#cookieName(type="text", placeholder="cookieName", name="cookieName")
+		button#btnSubmit(type="submit") submit
